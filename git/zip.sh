@@ -6,7 +6,7 @@ HANDIN="git"
 if [ ! $(command -v zip) ]; then
     echo "zip is not installed, installing ..."
     sudo apt-get update
-    sudo apt-get intall -y zip
+    sudo apt-get install -y zip
 else
     echo "zip is installed"
 fi
