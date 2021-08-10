@@ -34,8 +34,17 @@ You can use the same checker program that will be used to grade your hand-in to 
 
 Each of the hand-ins will have a `check.sh` script that will run a docker container, which will run the checker program, and tell you how many points you have achieved for each of the exercises.
 
+The script is located in `devops-academy-handins-public/git/check.sh`.
+
 You use the checker by calling the script `bash check.sh --exercise1` to check exercise 1, use `--exercise2` for exercise 2, and so on.
 `--all` will check all exercises and give you an overall score.
+
+You don't have to call the script from the same directory that it is located in, if you are working on exercise1 and want to check your solution, i.e. you are on the path `devops-academy-handins-public/git/exercise1/exercise`.
+Then you can point to the script like so:
+
+```sh
+bash ../../check.sh --exercise1
+```
 
 ## Submitting the Hand-in
 
@@ -49,7 +58,7 @@ bash zip.sh
 
 This will produce a file named `git-<your-email>.zip` which is what you hand in.
 
-**If you hand in your hand-in any other way, it will not be graded!**
+**If you submit your hand-in any other way, it will not be graded!**
 
 ---
 
