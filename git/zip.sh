@@ -3,6 +3,14 @@
 DIRECTORY_NAME="$(basename "$(pwd)")"
 HANDIN="git"
 
+if [ ! $(command -v zip) ]; then
+    echo "zip is not installed, installing ..."
+    sudo apt-get update
+    sudo apt-get intall -y zip
+else
+    echo "zip is installed"
+fi
+
 if [ "$DIRECTORY_NAME" = "$HANDIN" ]; then
     STUDENT=$(cat student.txt)
     ZIP_FILE="$HANDIN-$STUDENT.zip"
