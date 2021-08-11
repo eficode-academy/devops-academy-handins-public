@@ -1,9 +1,6 @@
 ---
 version: '3'
 
-networks:
-# TODO add networks
-
 volumes:
 # TODO add named volumes
 
