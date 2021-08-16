@@ -52,11 +52,11 @@ Your three deployments should be in the files `deployment-a.yaml`, `deployment-b
 - Create three Kubernetes deployments:
   - The deployments must use their respective images: `eficodeacademy/devopsacademyX` where `X is one of [a b c]`.
     - The images are already built and pushed to docker hub, so you just have to create the Kubernetes deployments, using the images.
-  - The name of the deployments must be `devopsacademy-X` where `X is one of [a b c]`
-  - The deployments must have the label `app: devopsacademy-X` where `X is one of [a b c]`
-  - The replicaset selector must match the label `app: devopsacademy-X` where `X is one of [a b c]`
-  - Pods created from the deployment must have the label `devopsacademy-X` where `X is one of [a b c]`
-  - The container in the pod must have the name `devopsacademy-X` where `X is one of [a b c]`
+  - The name of the deployments must be `deployment-X` where `X is one of [a b c]`
+  - The deployments must have the label `app: deployment-X` where `X is one of [a b c]`
+  - The replicaset selector must match the label `app: deployment-X` where `X is one of [a b c]`
+  - Pods created from the deployment must have the label `app: deployment-X` where `X is one of [a b c]`
+  - The container in the pod must have the name `devopsacademyX` where `X is one of [a b c]`
 
 ## Checker
 
@@ -75,9 +75,9 @@ Your three deployments should be in the files `service-a.yaml`, `service-b.yaml`
 
 - Create three Kubernetes services:
 
-  - The name of the services must be `devopsacademy-X` where `X is one of [a b c]`
-  - The service must have the label `app: devopsacademy-X` where `X is one of [a b c]`
-  - The service selector must match the label `app: devopsacademy-X` where `X is one of [a b c]`
+  - The name of the services must be `service-X` where `X is one of [a b c]`
+  - The service must have the label `app: deployment-X` where `X is one of [a b c]`
+  - The service selector must match the label `app: deployment-X` where `X is one of [a b c]`
   - The service must listen on port `5000` and forward traffic to port `5000`
   - The service must use the protocol `TCP`.
   - `service a` must be of type `NodePort` and `service b` and `service c` must be of type `ClusterIP`.
