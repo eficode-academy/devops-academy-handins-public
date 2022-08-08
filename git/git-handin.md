@@ -195,7 +195,7 @@ For more info: [read this](https://dev.to/bladesensei/avoid-messy-git-history-3g
 
 ### Tasks:
 
-- make sure your branch `feature/database-connection` is a linear history with origin/main
+- make sure your branch `feature/database-connection` has a linear history with origin/main
 
 #### Bonus (not graded)
 
