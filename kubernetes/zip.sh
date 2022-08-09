@@ -13,6 +13,10 @@ fi
 
 if [ "$DIRECTORY_NAME" = "$HANDIN" ]; then
   STUDENT=$(cat student.txt)
+  if [[ "$STUDENT" = "<your sdu email>" || -z "$STUDENT" ]]; then
+    echo "Please set your student email in the student.txt file"
+    exit 1
+  fi
   ZIP_FILE="$HANDIN-$STUDENT.zip"
   ZIP_DIR="$HANDIN-$STUDENT"
   mkdir $ZIP_DIR
