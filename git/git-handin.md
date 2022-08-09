@@ -2,7 +2,7 @@
 
 Welcome to the `git` hand-in!
 
-In this hand-in you will solve 5 different exercises about different git problems.
+In this hand-in you will solve 7 different exercises about different git problems.
 
 The exercises can be solved in multiple different ways, all solutions that lead to the desired state are correct.
 
