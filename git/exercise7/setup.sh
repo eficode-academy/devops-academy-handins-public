@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
+#!/usr/bin/env bash
+
 rm -rf exercise
-mkdir exercise
-cd exercise || exit
-git clone https://github.com/eficode-academy/devops-academy-remote-ex.git
-cd devops-academy-remote-ex
+git clone https://github.com/eficode-academy/devops-academy-remote-ex.git exercise
+cd exercise
 git reset --hard HEAD~1
 
 git checkout -b feature/database-connection
