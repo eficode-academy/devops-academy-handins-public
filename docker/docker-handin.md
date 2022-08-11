@@ -30,7 +30,7 @@ Run the script with:
 bash zip.sh
 ```
 
-This will produce a file named `git-<your-email>.zip` which is what you hand in.
+This will produce a file named `docker-<your-email>.zip` which is what you hand in.
 
 **If you submit your hand-in any other way, it will not be graded!**
 
