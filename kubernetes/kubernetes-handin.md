@@ -2,7 +2,7 @@
 
 Welcome to the Kubernetes hand-in!
 
-In this hand-in you will be creating Kubernetes configuration files for a small microserivce application.
+In this hand-in you will be creating Kubernetes configuration files for a small microservice application.
 Then you will deploy your configuration to a Kubernetes cluster in order to find a secret string that is returned from an endpoint on the application.
 
 ## Automatic Checker
@@ -40,12 +40,12 @@ This will produce a file named `kubernetes-<your-email>.zip` which is what you h
 # Exercise 1. Application Deployment
 
 We will be deploying a microservice application consisting of three different services, `a`, `b` and `c`.
-The `a` application acts as the "frontend" providing and API that you can query, and it will communicate with the `b` and `c` services.
+The `a` application acts as the "frontend" providing an API that you can query, and it will communicate with the `b` and `c` services.
 
 Your task is to create a Kubernetes deployment file for each of the services.
 
 Use the provided template files in `devops-academy-handins-public/kubernetes/kubernetes_yaml`.
-Your three deployments should be in the files `deployment-a.yaml`, `deployment-b.yaml` and `deployment-c`.
+Your three deployments should be in the files `deployment-a.yaml`, `deployment-b.yaml` and `deployment-c.yaml`.
 
 ## Tasks:
 
@@ -69,7 +69,7 @@ In order to networking and service discovery for the services in our application
 you must create a three different service configurations, one for each of your deployments.
 
 Use the provided template files in `devops-academy-handins-public/kubernetes/kubernetes_yaml`.
-Your three deployments should be in the files `service-a.yaml`, `service-b.yaml` and `service-c`.
+Your three deployments should be in the files `service-a.yaml`, `service-b.yaml` and `service-c.yaml`.
 
 ## Tasks:
 
