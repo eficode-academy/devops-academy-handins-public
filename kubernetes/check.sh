@@ -8,7 +8,6 @@ docker pull eficodeacademy/devops-academy-checker:release
 docker run \
   --rm \
   -it \
-  --network host \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v "$EXERCISE_PATH":/exercise \
   eficodeacademy/devops-academy-checker:release \
