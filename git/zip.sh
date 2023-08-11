@@ -13,9 +13,13 @@ fi
 
 if [ "$DIRECTORY_NAME" = "$HANDIN" ]; then
     STUDENT=$(cat student.txt)
-    if [[ "$STUDENT" = "<your SDU email>" || -z "$STUDENT" ]]; then
-        echo "Please set your student email in the student.txt file"
-        exit 1
+    # Regular expression to match a valid email address
+    email_regex="^[a-z0-9!#\$%&'*+/=?^_\`{|}~-]+(\.[a-z0-9!#$%&'*+/=?^_\`{|}~-]+)*@([a-z0-9]([a-z0-9-]*[a-z0-9])?\.)+[a-z0-9]([a-z0-9-]*[a-z0-9])?\$"
+    if [[ "$STUDENT" =~ $email_regex ]]; then
+          echo "email is valid, zipping" # Valid email
+    else
+        echo "Please set your student email in the student.txt file. Type only your email, not <your SDU email>"
+        exit 1  # Invalid email
     fi
     ZIP_FILE="$HANDIN-$STUDENT.zip"
     ZIP_DIR="$HANDIN-$STUDENT"
