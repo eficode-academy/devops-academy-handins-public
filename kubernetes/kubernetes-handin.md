@@ -63,7 +63,7 @@ It serves random cat pictures on port `5000` if the environment variable `SERVE_
 
 ## Checker
 
-Use: `bash check.sh --exercise` to check your solution.
+Use: `bash check.sh --exercise1` to check your solution.
 
 # Exercise 2. Application Deployment
 
