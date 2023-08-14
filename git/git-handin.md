@@ -62,47 +62,47 @@ This will produce a file named `git-<your-email>.zip` which is what you hand in.
 
 ---
 
-# Exercise 1
+## Exercise 1
 
 In this exercise you will be cleaning up the commit history of a branch.
 
-### Scenario:
+### Scenario
 
 The master branch contains a number of work-in-progress commits, made by a developer who just had to save some work in a hurry while working on a feature.
 
 In order to make a commit history that is suitable for others to read, you must clean it up.
 
-### Tasks:
+### Tasks
 
 - Squash the five newest commits into one.
 - The squashed commit must have exactly the commit message "close #321".
 - The branch should only contain two commits: the initial commit and your squashed commit.
 
-# Exercise 2
+## Exercise 2
 
 In this exercise you will make sure that work is saved to specific branches.
 
-### Scenario:
+### Scenario
 
 You are developing a new feature on the branch `feature`.
 
 You have already implemented the first part of the feature, and committed it to the branch, when you are notified that you have to fix a critical bug on `master` branch.
 
-You fix the bug on `master`. The bugfix is stored in a commit on `master` branch.
+You fixed the bug on `master`. The bugfix is stored in a commit on the `master` branch.
 
-Then you continue your work on the new feature, but realize that you did not switch back to the `feature` branch when you implemented the second part of the feature, which you have now commited to `master` branch.
+Then you continue your work on the new feature, but realize afterwards that you forgot to switch back to the `feature` branch before commiting the second part of the feature, so this change is now on the `master` branch.
 
-### Tasks:
+### Tasks
 
 - The second part feature commit and the bugfix commit currently on the `master` branch must also be present on the `feature` branch.
-- The `feature` branch should contain at least four commits: the initial commit, the feature first part, the feature second part and the bugfix.
+- The `feature` branch should contain at least four commits: the initial commit, the feature first part, the feature second part and the bugfix. As with real code, order is important. Make sure that the the two parts of the feature end up in the "sane" order in the final file.
 - Remove the second part feature commit from the `master` branch, so that it only contains the initial commit and the bugfix commit.
 
-# Exercise 3
+## Exercise 3
 
 In this exercise you will be creating a linear history of commits.
 
-### Scenario:
+### Scenario
 
 You have developed a new feature on a feature branch:
 
@@ -125,17 +125,17 @@ $ git log --oneline --graph --decorate --all
 * 4de1606 Add file greeting.txt
 ```
 
-### Tasks:
+### Tasks
 
 - Change the history of the `master` and `feature` branches to match the one above.
 - Make sure that `feature` has a linear history.
 - Then make sure that the work on feature is also delivered back in to `master` branch.
 
-# Exercise 4
+## Exercise 4
 
 In this exercise you will be cleaning up a git repository, removing work-in-progress and removing a bad commit.
 
-### Scenario:
+### Scenario
 
 You have been experimenting with some new changes.
 
@@ -143,7 +143,7 @@ Ultimately you decide that your experiment doesn't work, and you want to go back
 
 But you are left with some work-in-progress files as well as a commit that you don't want to keep.
 
-### Tasks:
+### Tasks
 
 - Remove the unstaged changes
 - Remove the staged changes
@@ -151,32 +151,32 @@ But you are left with some work-in-progress files as well as a commit that you d
 - Make git track bfile.txt and make a commit that adds the file
 - You should have either 2 or 4 commits on `master` branch when you are done
 
-# Exercise 5
+## Exercise 5
 
 In this exercise you will be exploring the history of a git repository, creating branches from past commits, and commits that are not visible in the commit log.
 
-### Scenario:
+### Scenario
 
 You want to preserve some previous work on a branch, so that you can easily check it out.
 
 Further you have a commit that has been lost to the git log in a rebase, though you did tag the commit with the message `e`. You want to continue to work on the commit, so you want to create a branch on this commit.
 
-### Tasks:
+### Tasks
 
 - Make a branch called `the-beginning` that is made from the first commit with message `A`
 - Find the dangling commit with the message `E`, and create a branch from that commit called `dangling`. To make your life easier, we have tagged this commit with a tag called `E`.
 
-# Exercise 6
+## Exercise 6
 
 In this scenario we will be working with a remote repository.
 
-### Scenario:
+### Scenario
 
 You are working in a team where you just committed your first commit to the remote repository.
 All is fine and dandy, until the CI server throws up with an army of errors, and you have no clue on what caused this eruption.
 You need to undo your changes and let the rest of the team commit their work, while you sit back and figure out what went wrong.
 
-### Tasks:
+### Tasks
 
 - Return the `main` branch to a workable state, by excluding the changes made in commit `0606c93735ef8ec65c53fa64b3529af83b19ed32`.
   This is a repository that other people are working on, and therefore you are not allowed to rewrite the history, only add to it.
@@ -184,9 +184,9 @@ You need to undo your changes and let the rest of the team commit their work, wh
 
 :bulb: you cannot commit to the remote (because this is a static repository used for this exercise), so your task is to change your local `main` branch to the correct state (in the real world you would then push your branch).
 
-# Exercise 7
+## Exercise 7
 
-### Scenario:
+### Scenario
 
 You are working on a project that has a lot of commits over time.
 You have been tasked with the database connection, and work on your own branch for a while.
@@ -199,11 +199,11 @@ I.e. you will not find any merges of branches with independent commit histories,
 
 For more info: [read this](https://dev.to/bladesensei/avoid-messy-git-history-3g26)
 
-### Tasks:
+### Tasks
 
 - Make sure your branch `feature/database-connection` has a linear history with origin/main.
 - If git is suggessts a commit message, do not change the wording.
 
-#### Bonus (not graded)
+### Bonus (not graded)
 
 How would you find a commit that is not in the commit log, and does not have any tag associated with it?
