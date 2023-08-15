@@ -25,8 +25,7 @@ if [ "$DIRECTORY_NAME" = "$HANDIN" ]; then
     ZIP_DIR="$HANDIN-$STUDENT"
     mkdir $ZIP_DIR
     cp -r student.txt "$ZIP_DIR"
-    cp -r kubernetes_yaml* "$ZIP_DIR"
-    cp -r secret* "$ZIP_DIR"
+    cp -rv exercise* "$ZIP_DIR"
     [ -f "$ZIP_FILE" ] && rm -v "$ZIP_FILE"
     zip -r "$ZIP_FILE" "$ZIP_DIR"
     rm -rf "$ZIP_DIR"
