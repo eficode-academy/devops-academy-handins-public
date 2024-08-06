@@ -24,6 +24,7 @@ if [ "$DIRECTORY_NAME" = "$HANDIN" ]; then
     ZIP_FILE="$HANDIN-$STUDENT.zip"
     ZIP_DIR="$HANDIN-$STUDENT"
     mkdir $ZIP_DIR
+    cp -rv reflections.md "$ZIP_DIR"
     cp -rv student.txt "$ZIP_DIR"
     cp -rv exercise* "$ZIP_DIR"
     [ -f "$ZIP_FILE" ] && rm -v "$ZIP_FILE"
