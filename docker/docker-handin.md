@@ -159,7 +159,7 @@ The wordpress "stack" will thus be **three containers total.**
 
 We will be using `named volumes` to persist data.
 
-In the [Compose file reference](https://docs.docker.com/compose/compose-file/compose-file-v3/#compose-file-structure-and-examples) you can look up how to configure all of the different parameters.
+In the [Compose file reference](https://docs.docker.com/compose/compose-file/) you can look up how to configure all of the different parameters.
 
 ## Tasks:
 
@@ -174,7 +174,7 @@ Write a `docker-compose.yaml` declarative specification:
   - Define a service named `reverse-proxy-nginx`.
     - Use the provided Dockerfile `exercise3/Dockerfile` to build an nginx image with the provided nginx config file `exercise3/nginx.conf`
       - Use a `build` key in the service, which specifies the `context` and `dockerfile` to use.
-      - [Relevant Docs](https://docs.docker.com/compose/compose-file/compose-file-v3/#build)
+      - [Relevant Docs](https://docs.docker.com/compose/compose-file/build/)
     - Must port-forward host port 80 to container port 80
     - The container name must be `nginx`
     - You can check that the image builds with the command: `$ cd exercise3 && docker compose build`
