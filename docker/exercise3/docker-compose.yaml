@@ -1,0 +1,17 @@
+
+volumes:
+# TODO add named volumes
+
+services:
+
+  reverse-proxy-nginx:
+    container_name: nginx
+    # TODO configure nginx
+
+  wordpress:
+    container_name: wordpress
+    # TODO configure wordpress
+
+  db:
+    container_name: db
+    # TODO configure mysql
