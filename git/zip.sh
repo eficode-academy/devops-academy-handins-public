@@ -29,7 +29,7 @@ if [ "$DIRECTORY_NAME" = "$HANDIN" ]; then
     cp -rv exercise* "$ZIP_DIR"
     [ -f "$ZIP_FILE" ] && rm -v "$ZIP_FILE"
     zip -r "$ZIP_FILE" "$ZIP_DIR"
-    rm -rfv "$ZIP_DIR"
+    rm -rf "$ZIP_DIR"
 else
     echo "Must be run inside '$HANDIN' directory."
     exit 1
