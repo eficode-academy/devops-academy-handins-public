@@ -15,5 +15,5 @@ Then you continue your work on the new feature, but realize afterwards that you 
 ## Tasks
 
 - The second part feature commit and the bugfix commit currently on the `master` branch must also be present on the `feature` branch.
-- The `feature` branch should contain at least four commits: the initial commit, the feature first part, the feature second part and the bugfix. As with real code, order is important. Make sure that the the two parts of the feature end up in the "sane" order in the final file.
+- The `feature` branch should contain exactly four commits: the initial commit, the feature first part, the feature second part and the bugfix. As with real code, order is important. Make sure that the the two parts of the feature end up in the "sane" order in the final file.
 - Remove the second part feature commit from the `master` branch, so that it only contains the initial commit and the bugfix commit.
