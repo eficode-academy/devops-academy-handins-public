@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DIRECTORY_NAME="$(basename "$(pwd)")"
-HANDIN="docker"
+HANDIN="kubernetes"
 
 if [ ! $(command -v zip) ]; then
     echo "zip is not installed, installing ..."
